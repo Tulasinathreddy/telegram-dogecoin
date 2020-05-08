@@ -42,7 +42,7 @@ def process(message,username,chatid):
 	message = message.split(" ")
 	for i in range(message.count(' ')):
 		message.remove(' ')
-
+		
 	if "/register" in message[0]:
 		try:
 			block_io.get_new_address(label=username)
