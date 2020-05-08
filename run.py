@@ -49,6 +49,8 @@ def process(message,username,chatid):
 			sendMsg("@"+username+" you are now registered.",chatid)
 		except:
 			sendMsg("@"+username+" you are already registered.",chatid)
+	elif "/start" in message:
+		    sendMsg("Welcoe the tipper bot",chatid)
 	elif "/balance" in message[0]:
 		try:
 			(balance, pending_balance) = returnBal(username)
