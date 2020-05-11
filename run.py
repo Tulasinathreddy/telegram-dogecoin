@@ -95,12 +95,12 @@ def process(message,username,chatid):
 			monikers_str,chatid)
 
 	elif "/active" in message:
-		 try:
+		
 			 
 			sendMsg("Current active : %d shibes" %(len(getCount(chatid))),chatid)
-	     except
+	    
 		     sendMsg("UNDER MAINTAINCE",chatid)
-	     pass 
+	     
 	else:
 		global active_users
 		try:
