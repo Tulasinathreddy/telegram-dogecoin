@@ -95,20 +95,7 @@ def process(message,username,chatid):
 			monikers_str,chatid)
 
 	elif "/active" in message:
-		
-			 
-			sendMsg("Current active : %d shibes" %(len(getCount(chatid))),chatid)
-	    
-		     sendMsg("UNDER MAINTAINCE",chatid)
-	     
-	else:
-		global active_users
-		try:
-				active_users[chatid][username] = time.time()
-		except KeyError:
-			active_users[chatid] = {}
-			active_users[chatid][username] = time.time()
-
+		 sendMsg("UNDER MAINTAINCE",chatid)
 while True:
 	try:
 		print("such dogeshift. much running.")
