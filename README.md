@@ -1,12 +1,15 @@
 # Prerequisites
 
-#### Setup Block.io Account
-[block.io](https://block.io) will be used by the bot so it can create and label wallets for users who type `/register`.
+1. A server
+2. MySQL Database
+3. RPC-Dogecoin Wallet
 
-1. Go to [block.io](https://block.io) and create an account (free)
-2. Set a pin, and save your [mnemonic](https://en.wikipedia.org/wiki/Mnemonic) phrase offline.
-_This will be used to generate your wallet again in the event you lose access to your account so always have the habit of keeping this safe._
-3. Click on "Show API Key" then copy the key for "Dogecoin (testnet)"
+
+#### Setup Create A Dogecoin RPC-wallet
+`Instructions here for rpc client setup`
+
+#### Setup Create A MySQL Database
+`Instructions here for rpc client setup`
 
 #### Create a Telegram Bot [@BotFather](https://core.telegram.org/bots#6-botfather)
 Further bot  documentation [link](https://core.telegram.org/bots#6-botfather)
@@ -21,12 +24,11 @@ Once you have a Block.io Account setup, and created your own Telegram Bot it's t
 
 1. `git clone git@github.com:peakshift/telegram-dogecoin.git`
 2. `cd telegram-dogecoin`
-3. `pip install block-io`
+3. `pip install python-bitcoinrpc`
 4. `pip install requests`
 5. `pip install behave`
-6. `TELEGRAM_BOT_TOKEN=<your token> BLOCKIO_API_KEY=<your key> BLOCKIO_PIN=<your pin> python3 run.py`
-
-_In step 5, replace the entire of `<your token>`, `<your token>`, `<your token>`._
+6. Upload the `database.sql` file to your respective database scheme.
+7. Fill your bot token and rpc wallet details in the `config.py` file.
 
 # Contributing
 
