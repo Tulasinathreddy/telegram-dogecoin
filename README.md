@@ -8,9 +8,6 @@
 #### Setup Create A Dogecoin RPC-wallet
 `Instructions here for rpc client setup`
 
-#### Setup Create A MySQL Database
-`Instructions here for rpc client setup`
-
 #### Create a Telegram Bot [@BotFather](https://core.telegram.org/bots#6-botfather)
 Further bot  documentation [link](https://core.telegram.org/bots#6-botfather)
 
